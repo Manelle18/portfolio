@@ -36,8 +36,8 @@
 
 .card {
     background-color: rgba(0, 3, 0, 0);
-    margin:10px;
-    border: 1px solid ;
+    margin: 10px;
+    border: 2px solid ;
 }
 
 .card-img-top {
@@ -50,6 +50,9 @@
 #competences{
     background-color: rgb(0, 0, 0);
     margin-left: auto;
+    display: flex;
+    justify-content: end;
+    margin-right: auto;
 }
 
 .cpt {
@@ -128,14 +131,7 @@
     width: 104px;
 }
 
-/* PAGE EXPERIENCES*/
-#experiences{
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    background-size: 0%;
-}
 
-  
 
 ol {
   margin: 4px;
@@ -200,6 +196,13 @@ li:nth-child(20n+13){
   margin: auto;
 }
 
+#container-list-triangle {
+  margin-right: 120px;
+}
+
+#form-contact {
+  margin-left: 400px;
+}
 
 
 /* PAGE FOOTER */
@@ -221,6 +224,9 @@ footer{
     background-color: #000;
     background-position: center bottom;
   }
+  .cpt {
+    margin-left: 0;
+  }
   .cvb{
     margin-top: 40%;
   }
@@ -233,96 +239,111 @@ footer{
   #presentation{
     line-height: 5.5;
     margin: auto;
-    background-position: center top;
-    background-size: 120% 40%;
+  
   }
 
-.projet {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 0;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
+  .projet {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+  }
+
+
+
+  .card {
+    background-color: rgba(0, 3, 0, 0);
+    margin:0,5%;
+    border: 2px solid ;
+    width: 250px;
+    
+  }
+
+  .card-img-top {
+    width: 150px;
+    height: 112px;
+    margin: auto
+  }
+
+  .list-triangle {
+    display: none;
+  }
+  .triangle-code{
+    
+    flex: 50%;
+  }
+  .lignejs{
+    flex: 50%;
+  }
+  .lignecss{
+
+    
+    width: 104px;
+  }
+  .lignebootstrap{
   
-}
+    width: 104px;
+  }
+  .lignephp{
 
+    
+    width: 104px;
+  }
+  .lignewordpress{
 
+    
+    width: 104px;
+  }
+  .lignesymfony{
 
-.card {
-  background-color: rgba(0, 3, 0, 0);
-  margin:0,5%;
-  border: 2px solid ;
-  width: 250px;
+    
+    width: 104px;
+
+  }
+  .lignemysql{
   
-}
+    
+    width: 104px;
+  }
+  #contact { 
+    background-color: rgb(0, 0, 0);
 
-.card-img-top {
-  width: 150px;
-  height: 112px;
-  margin: auto
-}
+  }
 
-.list-triangle {
-  display: flex;
-}
-.triangle-code{
-  
-  flex: 50%;
-}
-.lignejs{
-  flex: 50%;
-}
-.lignecss{
+  .contactForm {
+    width: 80%;
+    margin-left: 90%;
+  }
+  .infor{
+    margin-right: 40%;
+    
+  }
 
-  
-  width: 104px;
-}
-.lignebootstrap{
- 
-  width: 104px;
-}
-.lignephp{
+  h1 {
+    text-align: center;
+  }
 
-  
-  width: 104px;
-}
-.lignewordpress{
+  .row {
+    display: contents;
+  }
 
-  
-  width: 104px;
-}
-.lignesymfony{
-
-  
-  width: 104px;
-
-}
-.lignemysql{
- 
-  
-  width: 104px;
-}
-#contact { 
-  background-color: rgb(0, 0, 0);
+  #form-contact {
+    margin-left: 0;
+  }
 
 }
 
-.contactForm {
-  width: 80%;
-  margin-left: 90%;
-}
-.infor{
-  margin-right: 100%;
-  
-}
-}
 
-
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .nav-gauche {
     position: relative;
     display: none;
+  }
+
+  .cpt {
+    margin-left: 0;
   }
 
   .photoacceuil {
@@ -353,20 +374,16 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 0;
-  margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
   
 }
-
-
-
 .card {
   background-color: rgba(0, 3, 0, 0);
   margin:0,5%;
   border: 2px solid ;
   width: 250px;
-  
+  justify-content: right;
 }
 
 .card-img-top {
@@ -376,15 +393,9 @@ footer{
 }
 
 .list-triangle {
-  display: flex;
+  display: contents;
 }
-.triangle-code{
-  
-  flex: 50%;
-}
-.lignejs{
-  flex: 50%;
-}
+
 .lignecss{
 
   
@@ -425,8 +436,14 @@ footer{
   margin-left: 90%;
 }
 .infor{
-  margin-right: 100%;
+  margin-right: 40%;
   
+}
+.row {
+  --bs-gutter-x:0;
+}
+#form-contact {
+  margin-left: 0;
 }
 }
 
