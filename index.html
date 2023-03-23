@@ -12,8 +12,8 @@
     <header>
         <div class="photoacceuil">
             <div class="row">
-                <div class="col-md-4 col-lg-2 nav-gauche">
-                    <div class="d-flex flex-column flex-shrink-0 p-4 text-bg-dark" style="height: 1500px; width: 15%; position: fixed;">
+                <div class="col-md-4 col-lg-2 nav-gauche" id="sidebar">
+                    <div class="d-flex flex-column flex-shrink-0 p-4 text-bg-dark" id="navbar-gauche">
                         <a href="/" class="d-flex align text-white text-decoration-none">
                             <svg class="bi pe-none " width="90" height="42"><use xlink:href="#bootstrap"></use></svg>
                             <div>
@@ -22,7 +22,7 @@
                                 </div>
                                 <br>
                                 <div class="dropdown">
-                                    <img src="image/fond.jpg" alt="" class="rounded-circle me-2 d-flex justify-content-center" width="110" height="100">
+                                    <img src="/image/Sans titre.png" alt="" class="rounded-circle me-2 d-flex justify-content-center" width="110" height="100">
                                 </div><br>
                             </div>
                             <br>
@@ -79,11 +79,16 @@
                           </div>
                       </div>
                 </div>
+
+                  <div class="burger">
+                    <img src="/image/burger.png" id="burger-menu">
+                </div>
+
                 <div class="cvb col-md-8 col-lg-9" style=" left: 0;">
                     <div style="height: 100px; margin-right: 100px; margin-left: 500px; margin-top: 100px; position: relative; left: -400px;">
-                        <h2 class="text-light d-flex justify-content-center">DÉVELOPPEUR WEB</h2>
+                        <h2 class="text-light d-flex justify-content-center" id="titre">DÉVELOPPEUR WEB</h2>
                         <div class=" col-2 mt-3 container justify-content-center">
-                            <a href="image/cv.pdf"><button type="button" class="cvbbutton btn btn-outline-info col-11 btn-lg gap mt-aut">CV</button></a>
+                            <a href="/image/cv (copie).pdf"><button type="button" class="cvbbutton btn btn-outline-info col-11 btn-lg gap mt-aut">CV</button></a>
                         </div>
                     </div>
                 </div>
@@ -100,9 +105,10 @@
                           <h1 class=" text-bg-light p-1 container">PRÉSENTATION</h1><br>
                           <h4 class="mb-4">Bonjour je m'appelle Manelle Madiouni j'ai 20 ans.</h4>
                           <h4 class="mb-1">Aujourd'hui je vous présente mon travail.</h4>
-                          <h4 class="mb-3">A travers ce portfolio que j'ai réalisé avec soin vous découvrirez à chaque étape un peu plus sur la personne que je suis du point de vue professionnel mais pas seulement.</h4>
-                          <h4 class="mb-3">Pour ma part, la personnalité reflète notre travail mon caractère créatif et rigoureux m'a permis de choisir ce métier et de m'épanouir.</h4>
-                      </div>
+                          <h4 class="mb-3">À travers ce portfolio réalisé avec soin vous découvrirez à chaque étape la personne que je suis du point de vue professionnel mais pas seulement.</h4>
+                          <h4 class="mb-3">Pour ma part, la personnalité reflète notre travail.</h4>
+                          <h4 class="mb-1">Mon caractère créatif et rigoureux m'a permis de choisir ce métier et de m'épanouir dans ma vie professionnelle.</h4>
+                        </div>
                 </div>
             </div>
         </div><br>
@@ -113,7 +119,8 @@
         <div class="container text-center d-flex justify-content-end">
             <div class="row col-sm-10 col-md-10">
                     <div class="text-light p-3">
-                        <h1 class=" p-1 container bg-success text-bg-ligh">CRÉATION DE PROJET</h1><br>
+                        <h1 class=" p-1 container text-success">CRÉATION DE PROJET</h1>
+                        <hr>
                       </div>
                     </div>
                 </div>
@@ -179,10 +186,11 @@
 
       <section id="competences">
         <div class="container text-center">
-          <div class="container text-center d-flex justify-content-end">
+          <div class="container text-center d-flex justify-content-end" id="competencestitre">
               <div class="row col-sm-10 col-md-10">
                       <div class="text-light p-3">
-                          <h1 class=" p-1 container bg-danger text-bg-ligh">COMPÉTENCES</h1><br>
+                          <h1 class=" p-1 container text-danger">COMPÉTENCES</h1>
+                          <hr>
                         </div>
                       </div>
                   </div>
@@ -194,7 +202,7 @@
     <!-- PAGE COMPETENCES-->
     <section id="competences">
         <div class="cpt">
-          <div class="ms-5 container" id="container-list-triangle">
+          <div class=" container" id="container-list-triangle">
             <div class="justify-content-center col-sm-12 col-md-12 list-triangle align-content-end">
               <div class="triangle-code mt-5 text-danger">
                 <span class="lignehtml text-light"><p>HTML</p></span>
@@ -233,7 +241,8 @@
           <div class="container text-center d-flex justify-content-end">
               <div class="row col-sm-10 col-md-10">
                       <div class="text-light p-3 ">
-                          <h1 class=" p-1 container bg-warning text-bg-ligh">CONTACT</h1><br>
+                          <h1 class=" p-1 container text-warning" id="contacts">CONTACT</h1>
+                          <hr>
                         </div>
                       </div>
                   </div>
@@ -243,7 +252,7 @@
     <!-- PAGE CONTACT-->
     <section id="contact"><br><br>
         <div class="container text-center">
-          <h3 class="mb-4 m-5 text-warning">Remplissez les champs pour m'envoyer un mail</h3>
+          <h3 class="text-warning" >Remplissez les champs pour m'envoyer un mail</h3>
           <div class="col-md-7 col-lg-8 container justify-content-end" id="form-contact">
             <form class="needs-validation" action="process_send_mail.php" method="POST">
                 <div class="row g-3 ">
@@ -322,5 +331,6 @@
       </div><br><br>
     </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/css/script.js"></script>
 </body>
 </html>
